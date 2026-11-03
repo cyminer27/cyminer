@@ -1,8 +1,6 @@
 # Arcminer
 
-> **Picture goes here:** Add an Arcminer screenshot or banner above this guide.
->
-> Suggested Markdown: `![Arcminer dashboard](path/to/your-picture.png)`
+ ![Arcminer dashboard](img/arcminer.png)
 
 Arcminer is an experimental cryptocurrency miner for Windows PCs with an NVIDIA CUDA GPU. It runs in the foreground, so you choose when to start and stop it. It currently mines on **one GPU per process**.
 
@@ -43,7 +41,7 @@ Use the launcher or `--coin` value for the coin you intend to mine. Other algori
 
 The dashboard shows your pool connection, accepted and rejected shares, GPU activity, and the developer account. A share may take time to appear. Arcminer checks candidate hashes on the CPU before submitting them.
 
-Arcminer pauses between batches when the GPU reaches 80 °C and stops hashing above 85 °C. It requires a working temperature reading. Optional clock and power controls are described in [GPU tuning notes](docs/GPU_TUNING.md); leave them off unless you intend to change your GPU settings.
+Arcminer pauses between batches when the GPU reaches 80 °C and stops hashing above 85 °C. It requires a working temperature reading. Optional clock and power controls are described in [GPU tuning notes](GPU_TUNING.md); leave them off unless you intend to change your GPU settings.
 
 Keep Arcminer's `.fee-state` file between runs so active hashing time carries over. Arcminer prints its location when mining starts. Use **Ctrl+C** to let it finish its current batch and save the state.
 
@@ -52,6 +50,6 @@ Arcminer is still experimental. Live shares have been accepted for the coins lis
 ## More information
 
 - [Detailed project and development notes](README-TECHNICAL.md)
- 
- 
+
+
  
