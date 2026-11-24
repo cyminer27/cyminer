@@ -1,6 +1,6 @@
 # GPU tuning measurements
 
-Arcminer mines at the GPU's existing settings. MSI Afterburner is a development
+CYMiner mines at the GPU's existing settings. MSI Afterburner is a development
 measurement tool on this Windows host, not a runtime or build dependency. A
 clock profile must be tested separately for each algorithm: KawPoW (RVN),
 MeowPow (MEWC), Etchash (ETC), and Autolykos v2 (ERG). Results below are
@@ -101,7 +101,7 @@ The later +0 and +500 passes suggest a possible ETC/RVN gain, no clear ERG
 gain, and a MEWC loss, but GPU contention changed between runs. The earlier
 idle-card ETC result was 41.81 MH/s, well above both later passes. A controlled
 idle-GPU A/B/A trial would be needed before recommending a per-coin clock
-profile. The tested +500 profile is not an Arcminer default, and Reset has
+profile. The tested +500 profile is not an CYMiner default, and Reset has
 restored +0 offsets.
 
 ## Reproduction

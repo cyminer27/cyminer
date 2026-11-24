@@ -1,6 +1,6 @@
-# Arcminer technical notes
+# CYMiner technical notes
 
-For the miner quick start, see [README.md](README.md).
+For v1.0.4 setup and coin availability, see [README.md](README.md). The historical source and test examples below use the earlier Arcminer executable and build option names.
 
 Native Windows-focused C++20 / CUDA GPU cryptocurrency miner project.
 

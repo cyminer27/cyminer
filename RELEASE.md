@@ -1,6 +1,18 @@
-# Arcminer release notes
+# CYMiner release notes
 
-## v1.0.3 notes
+## v1.0.4
+
+- Renamed Arcminer to **CYMiner**. The packaged executables are now `cyminer.exe` on Windows and `cyminer` on Linux. Included coin launchers call the new executable names.
+- Added experimental Windows CUDA mining for Pearl (PRL) on Suprnova. Source testing recorded a CPU-verified CUDA share accepted by Suprnova. The packaged Pearl route reports a 0.25% active GPU hashing time fee.
+- The Windows CLI lists experimental GPU routes for Karlsen (KLS), Kaspa (KAS), and Zano (ZANO). Live share acceptance remains unverified.
+- Windows includes experimental single-thread Zephyr Protocol (ZEPH) RandomX CPU mining. It requires both `--mine` and `--experimental-randomx`. Live share acceptance remains unverified.
+- Monero (XMR) supports offline RandomX CPU configuration validation via `--check-config --coin xmr --processor cpu`.
+
+Mining remains opt-in. The developer fee on standard routes is 1% of active hashing time.
+
+[Windows x64 standalone ZIP](release/v1.0.4/cyminer-windows-x64-standalone.zip) · [Experimental Linux x64 CUDA ZIP](release/v1.0.4/cyminer-linux-x64-cuda-experimental.zip)
+
+## v1.0.3
 
 - Added experimental single-threaded Zephyr Protocol (ZEPH) RandomX CPU mining on Windows. Enable it explicitly with `--mine --experimental-randomx`. Read-only pool probing is available. Live share acceptance is still unverified.
 - Added development groundwork for Kaspa (KAS), Conflux (CFX), Zano (ZANO), Gram (GRAM), XTM, XELA, and Zilliqa (ZIL). Mining for these coins remains disabled. Karlsen (KLS) also remains at the scaffolding stage.
@@ -8,8 +20,6 @@
 - Updated Windows and experimental Linux release builds to reorder selected host functions and restored the GPLv3 license required by packaging.
 
 Arcminer remains opt-in. The developer fee is 1% of active hashing time.
-
-**Download status.** The latest ZIPs in this repository are v1.0.2. These are draft notes for v1.0.3.
 
 ## v1.0.2
 
@@ -21,8 +31,6 @@ Arcminer remains opt-in. The developer fee is 1% of active hashing time.
 - KpowBIT (KPOW) can be checked in the configuration, but mining is not yet available.
 
 Arcminer remains opt-in and uses 1% of active hashing time for its developer fee, not 1% of rewards. See [README.md](README.md) for the full coin list and setup steps.
-
-**Download status:** The ZIPs currently in `release/latest` are still v1.0.1. The v1.0.2 packages have not been uploaded yet.
 
 ## v1.0.1
 
